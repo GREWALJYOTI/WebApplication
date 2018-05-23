@@ -1,0 +1,31 @@
+{% extends "personal/header.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<p> Enter your credentials!
+</p>
+<Font size=6 color=blue>WEB APPLICATION</font>
+
+<FORM method = "post">
+
+Username:<INPUT type = "text" id="login" name="login"/>
+<br /><br />
+
+Password: <INPUT type = "password" name="pwd"/>
+<br /><br />
+
+<button onclick="myFunction()">Login</button>
+
+<script>
+function myFunction() {
+    var myWindow = window.open("", "_self");
+	var x = document.getElementById("login").value;
+    myWindow.document.write("<p>Hello " + x + "</p>");
+}
+</script>
+<br /><br />
+
+{% include "personal/includes/signup.html" %}
+
+{% endblock %}
