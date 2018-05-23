@@ -48,8 +48,7 @@ Save it.
 12. Now go to proj/mysite and type the following command:
 	./manage.py runserver
 	Open up the link. And we are done with our webapplication.
-
-
+	
 
 To test the code:
 If django already installed in your system, then store the 'proj' folder in your home directory and type the following command:
