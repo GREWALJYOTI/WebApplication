@@ -1,0 +1,38 @@
+<HTML>
+<BODY>
+<Font size=6 color=blue>Don't have an account! SIGN UP</Font>
+<br /><br />
+<FORM action="abc" method = "post">
+
+First Name:<INPUT type = "text" name="login"/>
+<br /><br />
+
+Last Name:<INPUT type = "text" name="login"/>
+<br /><br />
+
+Email Address or Mobile Number:<INPUT type = "text" id="username" name="login"/>
+<br /><br />
+
+Gender: Female<INPUT type = "radio" name="female" value="Female"/> Male<INPUT type = "radio" name="male" value="Male"/>
+<br /><br />
+
+Birthday: <input type="date" name="bday">
+<br /><br />
+
+Password: <INPUT type = "password" name="pwd"/>
+<br /><br />
+
+<button onclick="signup()">Submit</button>
+
+<script>
+function signup() {
+    var myWindow = window.open("", "_self");
+	var x = document.getElementById("username").value;
+    myWindow.document.write("<p> Registration Successful. Welcome " + x + "</p>");
+}
+</script>
+
+
+</FORM>
+</BODY>
+</HTML>
